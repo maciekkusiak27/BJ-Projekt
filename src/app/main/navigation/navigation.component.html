@@ -1,0 +1,13 @@
+<div
+  class="navigation_bar"
+  (scroll)="onScroll()"
+  [ngClass]="navbarfixed ? 'nav_fixed' : 'nav_not_fixed'"
+>
+  <div class="image">
+    <img [src]="logoImage" alt="logo" class="logoImage" />
+  </div>
+  <div class="options">
+    <a routerLink="/about" routerLinkActive="active">O NAS </a>
+    <a routerLink="/contact" routerLinkActive="active">KONTAKT </a>
+  </div>
+</div>
